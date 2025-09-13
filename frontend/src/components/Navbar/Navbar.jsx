@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { GiForkKnifeSpoon, GiChefToque } from 'react-icons/gi'
 import { NavLink } from 'react-router-dom'
-import { FiHome, FiBook, FiStar, FiPhone } from 'react-icons/fi';
+import { FiHome, FiBook, FiStar, FiPhone, FiBell } from 'react-icons/fi';
 
 const Navbar = () => {
   const [iopen, setIsopen] = useState(false);
@@ -9,6 +9,7 @@ const Navbar = () => {
   const navlinks = [
     { name: 'Home', to: '/', icon: <FiHome /> },
     { name: 'Menu', to: '/menu', icon: <FiBook /> },
+    { name: 'Meal Plans', to: '/mealplans', icon: <FiBell  /> },  // NEW
     { name: 'About', to: '/about', icon: <FiStar /> },
     { name: 'Contact', to: '/contact', icon: <FiPhone /> },
   ];
