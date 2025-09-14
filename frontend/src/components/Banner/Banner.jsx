@@ -41,7 +41,7 @@ const Banner = () => {
                         </h1>
 
                         <p className=' text-lg md:text-lg lg:text-xl font-playfair italic sm:text-xl text-amber-100 max-w-xl opacity-90 mx-auto md:mx-0'>
-                            Best cooks and tasty foods all at your service. We're here to serve good food to our students and get their meal without any hassle from campus.
+                            Best cooks and tasty foods all at your service. We're here to serve good food to our students and get them their meal without any hassle from campus.
 
                         </p>
                         <form onSubmit={handleSearch} className=' relative max-w-2xl mx-auto md:mx-0 group'>

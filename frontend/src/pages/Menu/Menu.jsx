@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <>
+      <Navbar />
+ 
+    </>
   )
 }
 
 export default Menu
+

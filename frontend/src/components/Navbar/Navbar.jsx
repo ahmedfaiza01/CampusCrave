@@ -2,10 +2,16 @@ import React, { useState } from 'react'
 import { GiForkKnifeSpoon, GiChefToque } from 'react-icons/gi'
 import { NavLink } from 'react-router-dom'
 import { FiHome, FiBook, FiStar, FiPhone, FiBell } from 'react-icons/fi';
+import { FiShoppingCart } from "react-icons/fi";
+
+import { useCart } from '../../CartContext/CartContext'
+
 
 const Navbar = () => {
   const [iopen, setIsopen] = useState(false);
+  const { totalItem } = useCart();
 
+  
   const navlinks = [
     { name: 'Home', to: '/', icon: <FiHome /> },
     { name: 'Menu', to: '/menu', icon: <FiBook /> },
@@ -73,6 +79,17 @@ const Navbar = () => {
                 </span>
               </NavLink>
             ))}
+            <div className=' flex items-center space-x-2 md:space-x-3 lg:space-x-4 ml-3 md:ml-3 lg:ml-3 lg:mr-4'>
+              <NavLink to='/cart' className=' p-2 md:p-2.0 lg:p-3 text-amber-100 rounded-xl transition-all relative border-2 border-amber-900/30 hover:border-amber-600/50 group hover:bg-amber-900/20 hover:shadow-lg hover:shadow-amber-500/30 shadow-md shadow-amber-900/20' >
+              <FiShoppingCart className=' text-base md:text-lg lg:text-lg'/>
+              {}
+
+
+              </NavLink>
+
+
+
+            </div>
           </div>
         </div>
       </div>
