@@ -34,7 +34,7 @@ const Banner = () => {
                         <h1 className=' text-4xl sm:text-5xl md:text-4xl lg:text-6xl font-bold loading-tight font-serif drop-shadow-md'>
                             Enjoy Our <br />
                             <span className=' text-amber-400 bg-gradient-to-r from-amber-400 to-amber-300 bg-clip-text'>
-                                Delicious Food
+                                Delicious Meal
 
                             </span>
 
