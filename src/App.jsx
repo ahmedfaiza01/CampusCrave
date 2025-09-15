@@ -7,7 +7,7 @@ import Menu from "./pages/Menu/Menu";
 import Cart from "./pages/Cart/Cart";
 import MealPlans from "./pages/MealPlans/MealPlans"; 
 import Checkout from "./pages/MealPlans/Checkout"; 
-import MealOrders from "./pages/MealOrders/MealOrders"; // <-- new import
+
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/mealplans" element={<MealPlans />} />
       <Route path="/checkout" element={<Checkout />} />
-      <Route path="/mealorders" element={<MealOrders />} /> {/* new route */}
+      
       
     </Routes>
   );
