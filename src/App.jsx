@@ -9,6 +9,7 @@ import MealPlans from "./pages/MealPlans/MealPlans";
 import Checkout from "./pages/MealPlans/Checkout"; 
 
 
+
 const App = () => {
   return (
     <Routes>
@@ -19,7 +20,7 @@ const App = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/mealplans" element={<MealPlans />} />
       <Route path="/checkout" element={<Checkout />} />
-      
+       <Route path="/login" element={<Home />} />
       
     </Routes>
   );
