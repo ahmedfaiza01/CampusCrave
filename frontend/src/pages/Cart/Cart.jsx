@@ -1,12 +1,10 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
 
-const CartContext = () => {
+const Cart = () => {
   return (
-        <>
-      <Navbar/>
-    </>
+    <Navbar/>
   )
 }
 
-export default CartContext
-
+export default Cart
