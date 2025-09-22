@@ -1,17 +1,22 @@
-import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Banner from "../../components/Banner/Banner";
-import OurHomeMenu from "../../components/OurHomeMenu/OurHomeMenu";
+import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
+import Banner from '../../components/Banner/Banner'
+import SpecialOffer from '../../components/SpecialOffer/SpecialOffer'
+import OurHomeMenu from '../../components/OurHomeMenu/OurHomeMenu'
+import Footer from '../../components/Footer/Footer'
 
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Banner />
-      <OurHomeMenu />
-    </>
-  );
-};
+      <Navbar/>
+      <Banner/>
 
-export default Home;
+      <SpecialOffer/>
+      <OurHomeMenu/>
+      <Footer />
+    </>
+  )
+}
+
+export default Home
