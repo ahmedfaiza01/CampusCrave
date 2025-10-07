@@ -16,12 +16,12 @@ const Footer = () => {
     <footer className="bg-[#2A211C] text-amber-100 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* GRID (now only 2 columns) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
 
           {/* LEFT COLUMN */}
           <div className="space-y-6">
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold font-sacramento text-amber-400 animate-pulse">
+            <h2 className="text-4xl sm:text-5xl font-bold font-sacramento text-amber-400 animate-pulse">
               CampusCrave
             </h2>
             <p className="text-amber-200/90 text-sm font-sacramento italic">
@@ -34,13 +34,13 @@ const Footer = () => {
                 <FaRegEnvelope className="text-amber-400 animate-pulse" />
                 <span className="font-bold text-amber-400">Get Exclusive Offers</span>
               </div>
-              <div className="relative">
+              <div className="relative max-w-md">
                 <input
                   type="email"
                   placeholder="Enter your email..."
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-lg bg-amber-50/5 border-2 border-amber-400/30 focus:outline-none focus:border-amber-400 focus:ring-4 focus:ring-amber-400/20 transition-all duration-300 placeholder-amber-200/50 pr-24"
+                  className="w-full px-4 py-2 rounded-lg bg-amber-50/5 border-2 border-amber-400/30 focus:outline-none focus:border-amber-400 focus:ring-4 focus:ring-amber-400/20 transition-all duration-300 placeholder-amber-200/50 pr-24"
                   required
                 />
                 <button
