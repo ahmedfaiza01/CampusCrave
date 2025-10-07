@@ -3,13 +3,6 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { BiChevronRight } from "react-icons/bi";
 import { socialIcons } from "../../assets/dummydata";
 
-const navItems = [
-  { name: 'Home', link: '/' },
-  { name: 'Menu', link: '/menu' },
-  { name: 'About Us', link: '/about' },
-  { name: 'Contact', link: '/contact' },
-];
-
 const Footer = () => {
   const [email, setEmail] = useState('');
 
@@ -23,8 +16,8 @@ const Footer = () => {
     <footer className="bg-[#2A211C] text-amber-100 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+        {/* GRID (now only 2 columns) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
 
           {/* LEFT COLUMN */}
           <div className="space-y-6">
@@ -62,25 +55,6 @@ const Footer = () => {
                 </button>
               </div>
             </form>
-          </div>
-
-          {/* MIDDLE COLUMN */}
-          <div className="flex justify-center">
-            <div className="space-y-4">
-              <ul className="space-y-3">
-                {navItems.map((item) => (
-                  <li key={item.name}>
-                    <a
-                      href={item.link}
-                      className="flex items-center hover:text-amber-400 transition-all group font-lora hover:pl-2"
-                    >
-                      <BiChevronRight className="mr-2 text-amber-400 group-hover:animate-bounce" />
-                      <span className="group-hover:italic">{item.name}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           {/* RIGHT COLUMN */}
@@ -133,4 +107,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
