@@ -123,10 +123,30 @@ export const teamMembers = [
 
 // ABOUT HOMEPAGE
 export const aboutfeature = [
-    { icon: FaBolt, title: "Instant Ordering", text: "Seamless digital experience", color: "from-amber-400 to-orange-500" },
-    { icon: FaRegClock, title: "Always Open", text: "24/7 premium service", color: "from-rose-400 to-pink-600" },
-    { icon: FaCalendarCheck, title: "Exclusive Booking", text: "Priority reservations", color: "from-emerald-400 to-cyan-600" },
-    { icon: FaFire, title: "Signature Dishes", text: "Chef's special creations", color: "from-purple-400 to-indigo-600" }
+    { 
+        icon: FaBolt, 
+        title: "Quick Cravings", 
+        text: "Order your favorite meals instantly from anywhere on campus", 
+        color: "from-amber-400 to-orange-500" 
+    },
+    { 
+        icon: FaRegClock, 
+        title: "Always Available", 
+        text: "Open 24/7 — because student hunger never sleeps", 
+        color: "from-rose-400 to-pink-600" 
+    },
+    { 
+        icon: FaCalendarCheck, 
+        title: "Priority Pre-Orders", 
+        text: "Reserve your meals ahead during busy hours or exam rush", 
+        color: "from-emerald-400 to-cyan-600" 
+    },
+    { 
+        icon: FaFire, 
+        title: "Signature Flavors", 
+        text: "Exclusive chef’s specials made just for CampusCrave foodies", 
+        color: "from-purple-400 to-indigo-600" 
+    }
 ];
 
 // SPECIAL OFFER
