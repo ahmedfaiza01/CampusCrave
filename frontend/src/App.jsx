@@ -5,8 +5,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import AboutPage from "./pages/Aboutpage/AboutPage";
 import Menu from "./pages/Menu/Menu";
 import Cart from "./pages/Cart/Cart";
-import MealPlans from "./pages/MealPlans/MealPlans"; 
-import Checkout from "./pages/MealPlans/Checkout"; 
+
 
 
 
@@ -18,8 +17,7 @@ const App = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/mealplans" element={<MealPlans />} />
-      <Route path="/checkout" element={<Checkout />} />
+    
        <Route path="/login" element={<Home />} />
       <Route path="/SignUp" element={<Home />} /> 
     </Routes>
