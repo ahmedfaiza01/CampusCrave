@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import SpecialOffer from '../../components/SpecialOffer/SpecialOffer'
 import OurHomeMenu from '../../components/OurHomeMenu/OurHomeMenu'
 import Footer from '../../components/Footer/Footer'
+import AboutHome from '../../components/AboutHome/Abouthome'
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner/>
 
       <SpecialOffer/>
+      <AboutHome/>
       <OurHomeMenu/>
       <Footer />
     </>
