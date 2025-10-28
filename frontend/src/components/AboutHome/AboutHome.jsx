@@ -1,4 +1,4 @@
-import React from 'react'
+sssimport React from 'react'
 import {aboutfeature} from '../../assets/dummydata'
 import { FaInfoCircle } from 'react-icons/fa'
 import {Link} from 'react-router-dom'
