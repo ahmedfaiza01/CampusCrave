@@ -78,6 +78,18 @@ const OurMenu = () => {
                     <p className="text-amber-100/80 text-xs sm:text-sm mb-4 font-cinzel leading-relaxed line-clamp-3">
                       {item.description}
                     </p>
+
+                     
+                    {item.nutrition && (
+                      <div className="bg-amber-800/10 border border-amber-800/30 rounded-xl p-3 mb-4 text-amber-100/80 text-xs font-cinzel">
+                        <p><strong>Calories:</strong> {item.nutrition.calories}</p>
+                        <p><strong>Protein:</strong> {item.nutrition.protein}</p>
+                        <p><strong>Carbs:</strong> {item.nutrition.carbs}</p>
+                        <p><strong>Fat:</strong> {item.nutrition.fat}</p>
+                      </div>
+                    )}
+
+                    
                   </div>
 
                   <div className="mt-auto flex items-center gap-4 justify-between">
