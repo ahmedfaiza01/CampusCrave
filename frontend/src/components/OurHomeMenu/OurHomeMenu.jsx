@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useCart } from '../../CartContext/CartContext'
-import { dummyMenuData } from '../../assets/omhDD'
+import { dummyMenuData } from '../../assets/OmhDD.js'
 import { Link } from 'react-router-dom'
 import { FaMinus, FaPlus } from "react-icons/fa"
 import './OurHomeMenu.css'
@@ -9,8 +9,6 @@ const categories = [
   'Breakfast',
   'Lunch',
   'Dinner',
-  //'Mexican',
-  //'Italian',
   'Desserts',
   'Drinks'
 ]
@@ -19,7 +17,6 @@ const OurHomeMenu = () => {
   const [activeCategory, setActiveCategory] = useState(categories[0])
   const displayItems = (dummyMenuData[activeCategory] || []).slice(0, 4)
 
-  // ✅ Fixed: use cartItems, not cartItem
   const { cartItems, addToCart, removeFromCart, updateQuantity } = useCart()
   const getQuantity = id => cartItems?.find(i => i.id === id)?.quantity || 0
 
@@ -78,6 +75,17 @@ const OurHomeMenu = () => {
                     <p className="text-amber-100/80 text-xs sm:text-sm mb-4 font-cinzel leading-relaxed line-clamp-3">
                       {item.description}
                     </p>
+
+                 
+                    {item.nutrition && (
+                      <div className="bg-amber-800/10 border border-amber-800/30 rounded-xl p-3 mb-4 text-amber-100/80 text-xs font-cinzel">
+                        <p><strong>Calories:</strong> {item.nutrition.calories}</p>
+                        <p><strong>Protein:</strong> {item.nutrition.protein}</p>
+                        <p><strong>Carbs:</strong> {item.nutrition.carbs}</p>
+                        <p><strong>Fat:</strong> {item.nutrition.fat}</p>
+                      </div>
+                    )}
+                  
                   </div>
 
                   <div className="mt-auto flex items-center gap-4 justify-between">
@@ -90,7 +98,6 @@ const OurHomeMenu = () => {
                     <div className="flex items-center gap-2">
                       {quantity > 0 ? (
                         <>
-                          {/* ✅ Fixed: use updateQuantity instead of addToCart */}
                           <button
                             className="w-8 h-8 rounded-full bg-amber-800/40 flex items-center justify-center hover:bg-amber-800/50 transition-colors"
                             onClick={() =>
