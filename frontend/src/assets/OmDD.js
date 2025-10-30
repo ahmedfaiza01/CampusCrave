@@ -93,6 +93,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: EggsBenedict,
       description: 'Poached eggs over toasted English muffins with hollandaise sauce.',
+      nutrition: { calories: 350, protein: 18, carbs: 30, fat: 20 },
     },
     {
       id: 'breakfast-2',
@@ -101,6 +102,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: AvocadoToast,
       description: 'Toasted bread topped with smashed avocado and spices.',
+      nutrition: { calories: 220, protein: 6, carbs: 28, fat: 12 },
     },
     {
       id: 'breakfast-3',
@@ -109,6 +111,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: PancakeswithMapleSyrup,
       description: 'Fluffy pancakes drizzled with pure maple syrup.',
+      nutrition: { calories: 320, protein: 8, carbs: 50, fat: 10 },
     },
     {
       id: 'breakfast-4',
@@ -117,6 +120,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: FruitSmoothieBowl,
       description: 'A bowl full of fresh fruits blended into a refreshing smoothie.',
+      nutrition: { calories: 280, protein: 5, carbs: 55, fat: 5 },
     },
     {
       id: 'breakfast-5',
@@ -125,6 +129,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: SunnyOats,
       description: 'Creamy oatmeal swirled with cinnamon and honey.',
+      nutrition: { calories: 250, protein: 6, carbs: 45, fat: 7 },
     },
     {
       id: 'breakfast-6',
@@ -133,6 +138,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: BananaToast,
       description: 'Toast topped with peanut butter and banana slices.',
+      nutrition: { calories: 280, protein: 7, carbs: 40, fat: 10 },
     },
     {
       id: 'breakfast-7',
@@ -141,6 +147,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: BagelSmash,
       description: 'Toasted bagel with cream cheese and smoked salmon.',
+      nutrition: { calories: 360, protein: 15, carbs: 45, fat: 12 },
     },
     {
       id: 'breakfast-8',
@@ -149,6 +156,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: FruitWaffle,
       description: 'Crispy waffle topped with strawberries and whipped cream.',
+      nutrition: { calories: 320, protein: 6, carbs: 50, fat: 12 },
     },
     {
       id: 'breakfast-9',
@@ -157,6 +165,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: FrenchToast,
       description: 'Classic French toast served with powdered sugar and berries.',
+      nutrition: { calories: 300, protein: 7, carbs: 45, fat: 10 },
     },
     {
       id: 'breakfast-10',
@@ -165,6 +174,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: BreakfastBurrito,
       description: 'Eggs, cheese, and veggies wrapped in a soft tortilla.',
+      nutrition: { calories: 400, protein: 18, carbs: 35, fat: 18 },
     },
     {
       id: 'breakfast-11',
@@ -173,6 +183,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: BagelwithLox,
       description: 'Toasted bagel topped with smoked salmon, cream cheese, and capers.',
+      nutrition: { calories: 360, protein: 16, carbs: 42, fat: 10 },
     },
     {
       id: 'breakfast-12',
@@ -181,9 +192,10 @@ export const dummyMenuData = {
       rating: 4.3,
       image: GranolaParfait,
       description: 'Layers of granola, yogurt, and fresh berries.',
+      nutrition: { calories: 280, protein: 8, carbs: 45, fat: 8 },
     },
   ],
-  Lunch: [
+Lunch: [
     {
       id: 'lunch-1',
       name: 'Chicken Caesar Salad',
@@ -191,6 +203,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: ChickenCaesarSalad,
       description: 'Crisp romaine with grilled chicken, parmesan, and Caesar dressing.',
+      nutrition: { calories: 350, protein: 30, carbs: 12, fat: 20 },
     },
     {
       id: 'lunch-2',
@@ -199,6 +212,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: ClubSandwich,
       description: 'Triple-decker sandwich with turkey, bacon, and fresh veggies.',
+      nutrition: { calories: 420, protein: 28, carbs: 35, fat: 18 },
     },
     {
       id: 'lunch-3',
@@ -207,6 +221,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: VeggieWrap,
       description: 'A wrap filled with a mix of seasonal vegetables and hummus.',
+      nutrition: { calories: 300, protein: 10, carbs: 40, fat: 12 },
     },
     {
       id: 'lunch-4',
@@ -215,6 +230,7 @@ export const dummyMenuData = {
       rating: 4.0,
       image: GrilledCheeseSandwich,
       description: 'Classic grilled cheese with melted cheddar on sourdough.',
+      nutrition: { calories: 330, protein: 15, carbs: 28, fat: 18 },
     },
     {
       id: 'lunch-5',
@@ -223,6 +239,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: GrilledSalmonBowl,
       description: 'Grilled salmon over quinoa, roasted veggies, and lemon-dill sauce.',
+      nutrition: { calories: 450, protein: 35, carbs: 40, fat: 20 },
     },
     {
       id: 'lunch-6',
@@ -231,6 +248,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: SpicyBeefTacos,
       description: 'Soft tortillas filled with seasoned beef, salsa, and avocado.',
+      nutrition: { calories: 400, protein: 25, carbs: 36, fat: 18 },
     },
     {
       id: 'lunch-7',
@@ -239,6 +257,7 @@ export const dummyMenuData = {
       rating: 4.8,
       image: SushiCombo,
       description: 'Assorted sushi rolls with tuna, salmon, avocado, and soy sauce.',
+      nutrition: { calories: 350, protein: 20, carbs: 50, fat: 10 },
     },
     {
       id: 'lunch-8',
@@ -246,7 +265,8 @@ export const dummyMenuData = {
       price: '89',
       rating: 4.0,
       image: RedChickenCurry,
-      description: ' a balance of creamy, sweet, and slightly spicy notes.',
+      description: 'A balance of creamy, sweet, and slightly spicy notes.',
+      nutrition: { calories: 400, protein: 28, carbs: 15, fat: 25 },
     },
     {
       id: 'lunch-9',
@@ -255,6 +275,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: TurkeyPanini,
       description: 'Pressed panini with turkey, Swiss cheese, and pesto.',
+      nutrition: { calories: 370, protein: 25, carbs: 30, fat: 16 },
     },
     {
       id: 'lunch-10',
@@ -263,6 +284,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: QuinoaSalad,
       description: 'Healthy salad with quinoa, mixed greens, and vinaigrette.',
+      nutrition: { calories: 320, protein: 12, carbs: 42, fat: 10 },
     },
     {
       id: 'lunch-11',
@@ -271,6 +293,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: PastaSalad,
       description: 'Chilled pasta salad with fresh vegetables and Italian dressing.',
+      nutrition: { calories: 350, protein: 10, carbs: 45, fat: 12 },
     },
     {
       id: 'lunch-12',
@@ -279,6 +302,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: FishTacos,
       description: 'Grilled fish tacos with cabbage slaw and lime crema.',
+      nutrition: { calories: 380, protein: 22, carbs: 35, fat: 16 },
     },
   ],
   Dinner: [
@@ -289,6 +313,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: GrilledRibeyeSteak,
       description: 'Juicy ribeye steak grilled to perfection.',
+      nutrition: { calories: 650, protein: 55, carbs: 0, fat: 45 },
     },
     {
       id: 'dinner-2',
@@ -297,6 +322,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: SalmonFillet,
       description: 'Fresh salmon fillet with a lemon butter sauce.',
+      nutrition: { calories: 420, protein: 40, carbs: 5, fat: 25 },
     },
     {
       id: 'dinner-3',
@@ -305,6 +331,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: RoastChicken,
       description: 'Herb-roasted chicken served with seasonal vegetables.',
+      nutrition: { calories: 400, protein: 35, carbs: 10, fat: 22 },
     },
     {
       id: 'dinner-4',
@@ -313,6 +340,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: PastaPrimavera,
       description: 'Pasta with fresh seasonal vegetables in a light sauce.',
+      nutrition: { calories: 360, protein: 12, carbs: 55, fat: 10 },
     },
     {
       id: 'dinner-5',
@@ -321,6 +349,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: ChickenParmesan,
       description: 'Crispy breaded chicken topped with marinara sauce and melted mozzarella.',
+      nutrition: { calories: 520, protein: 40, carbs: 25, fat: 28 },
     },
     {
       id: 'dinner-6',
@@ -329,6 +358,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: PestoPastaWithShrimp,
       description: 'Linguine tossed in a vibrant pesto sauce with succulent shrimp.',
+      nutrition: { calories: 480, protein: 30, carbs: 50, fat: 20 },
     },
     {
       id: 'dinner-7',
@@ -337,6 +367,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: GarlicButterLambChops,
       description: 'Tender lamb chops glazed with rosemary garlic butter.',
+      nutrition: { calories: 600, protein: 50, carbs: 0, fat: 42 },
     },
     {
       id: 'dinner-8',
@@ -345,6 +376,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: VegetarianStuffedPeppers,
       description: 'Bell peppers filled with a savory mix of quinoa, black beans, and vegetables.',
+      nutrition: { calories: 350, protein: 15, carbs: 50, fat: 12 },
     },
     {
       id: 'dinner-9',
@@ -353,6 +385,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: BeefBourguignon,
       description: 'Classic French beef stew with red wine and mushrooms.',
+      nutrition: { calories: 500, protein: 45, carbs: 20, fat: 25 },
     },
     {
       id: 'dinner-10',
@@ -361,6 +394,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: VegetableStirFry,
       description: 'Crispy vegetables stir-fried in a tangy sauce.',
+      nutrition: { calories: 280, protein: 8, carbs: 35, fat: 12 },
     },
     {
       id: 'dinner-11',
@@ -369,6 +403,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: ShrimpScampi,
       description: 'Shrimp cooked in garlic butter sauce over linguine.',
+      nutrition: { calories: 450, protein: 30, carbs: 45, fat: 18 },
     },
     {
       id: 'dinner-12',
@@ -377,9 +412,10 @@ export const dummyMenuData = {
       rating: 4.8,
       image: LambChops,
       description: 'Grilled lamb chops with rosemary and garlic.',
+      nutrition: { calories: 610, protein: 50, carbs: 0, fat: 44 },
     },
   ],
-  Mexican: [
+   Mexican: [
     {
       id: 'mexican-1',
       name: 'Tacos al Pastor',
@@ -387,6 +423,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: TacosalPastor,
       description: 'Tacos with marinated pork, pineapple, and cilantro.',
+      nutrition: { calories: 200, protein: 10, carbs: 25, fat: 8 },
     },
     {
       id: 'mexican-2',
@@ -395,6 +432,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: ChickenQuesadilla,
       description: 'Grilled quesadilla filled with chicken, cheese, and salsa.',
+      nutrition: { calories: 300, protein: 15, carbs: 30, fat: 12 },
     },
     {
       id: 'mexican-3',
@@ -403,6 +441,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: Enchiladas,
       description: 'Corn tortillas rolled around a filling and smothered in spicy sauce.',
+      nutrition: { calories: 350, protein: 18, carbs: 40, fat: 15 },
     },
     {
       id: 'mexican-4',
@@ -411,6 +450,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: Fajitas,
       description: 'Sizzling steak or chicken served with peppers and onions.',
+      nutrition: { calories: 400, protein: 25, carbs: 35, fat: 18 },
     },
     {
       id: 'mexican-5',
@@ -419,6 +459,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: ChilesRellenos,
       description: 'Roasted poblano peppers stuffed with cheese, lightly battered and fried, served with a tangy tomato sauce.',
+      nutrition: { calories: 320, protein: 12, carbs: 20, fat: 18 },
     },
     {
       id: 'mexican-6',
@@ -427,6 +468,7 @@ export const dummyMenuData = {
       rating: 4.8,
       image: MolePoblano,
       description: 'Tender chicken simmered in a complex, rich mole sauce with hints of chocolate and spices, served with rice.',
+      nutrition: { calories: 450, protein: 30, carbs: 40, fat: 20 },
     },
     {
       id: 'mexican-7',
@@ -435,6 +477,7 @@ export const dummyMenuData = {
       rating: 4.8,
       image: PozoleRojo,
       description: 'Traditional soup with hominy, pork, and red chiles, garnished with radish and lime.',
+      nutrition: { calories: 350, protein: 20, carbs: 35, fat: 12 },
     },
     {
       id: 'mexican-8',
@@ -443,6 +486,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: Churros,
       description: 'Fried dough pastries rolled in cinnamon sugar, served with chocolate sauce.',
+      nutrition: { calories: 300, protein: 4, carbs: 45, fat: 15 },
     },
     {
       id: 'mexican-9',
@@ -451,6 +495,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: Nachos,
       description: 'Crispy tortilla chips loaded with cheese and toppings.',
+      nutrition: { calories: 400, protein: 12, carbs: 50, fat: 20 },
     },
     {
       id: 'mexican-10',
@@ -459,6 +504,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: Burrito,
       description: 'A large flour tortilla filled with beans, rice, and meat.',
+      nutrition: { calories: 500, protein: 25, carbs: 55, fat: 18 },
     },
     {
       id: 'mexican-11',
@@ -467,6 +513,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: Tamales,
       description: 'Steamed masa filled with meats or vegetables.',
+      nutrition: { calories: 350, protein: 15, carbs: 45, fat: 12 },
     },
     {
       id: 'mexican-12',
@@ -475,9 +522,10 @@ export const dummyMenuData = {
       rating: 4.5,
       image: Chilaquiles,
       description: 'Tortilla chips simmered in a red or green salsa.',
-    },
+      nutrition: { calories: 380, protein: 12, carbs: 50, fat: 14 },
+    }
   ],
-  Italian: [
+   Italian: [
     {
       id: 'italian-1',
       name: 'Spaghetti Carbonara',
@@ -485,6 +533,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: SpaghettiCarbonara,
       description: 'Classic pasta with eggs, cheese, pancetta, and pepper.',
+      nutrition: { calories: 400, protein: 20, carbs: 50, fat: 18 },
     },
     {
       id: 'italian-2',
@@ -493,6 +542,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: Lasagna,
       description: 'Layers of pasta with meat sauce, cheese, and béchamel.',
+      nutrition: { calories: 450, protein: 25, carbs: 55, fat: 20 },
     },
     {
       id: 'italian-3',
@@ -501,6 +551,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: Risotto,
       description: 'Creamy Arborio rice cooked with broth and parmesan.',
+      nutrition: { calories: 380, protein: 15, carbs: 60, fat: 12 },
     },
     {
       id: 'italian-4',
@@ -509,6 +560,7 @@ export const dummyMenuData = {
       rating: 4.8,
       image: MargheritaPizza,
       description: 'Pizza topped with tomato sauce, mozzarella, and basil.',
+      nutrition: { calories: 300, protein: 12, carbs: 35, fat: 15 },
     },
     {
       id: 'italian-5',
@@ -517,6 +569,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: PenneArrabbiata,
       description: 'Penne pasta tossed in a spicy tomato sauce infused with garlic and red chili flakes.',
+      nutrition: { calories: 350, protein: 10, carbs: 55, fat: 12 },
     },
     {
       id: 'italian-6',
@@ -525,6 +578,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: CapreseSalad,
       description: 'Fresh slices of tomato, mozzarella, and basil drizzled with extra virgin olive oil and balsamic glaze.',
+      nutrition: { calories: 220, protein: 10, carbs: 8, fat: 15 },
     },
     {
       id: 'italian-7',
@@ -533,6 +587,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: EggplantParmesan,
       description: 'Breaded eggplant layered with marinara sauce, mozzarella, and Parmesan cheese, baked to perfection.',
+      nutrition: { calories: 400, protein: 15, carbs: 35, fat: 18 },
     },
     {
       id: 'italian-8',
@@ -541,6 +596,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: FocacciaBread,
       description: 'Soft, herbed focaccia with a crispy crust, drizzled with olive oil and sprinkled with sea salt.',
+      nutrition: { calories: 250, protein: 5, carbs: 45, fat: 10 },
     },
     {
       id: 'italian-9',
@@ -549,6 +605,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: FettuccineAlferdo,
       description: 'Pasta in a rich and creamy Alfredo sauce.',
+      nutrition: { calories: 420, protein: 15, carbs: 50, fat: 20 },
     },
     {
       id: 'italian-10',
@@ -557,6 +614,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: PestoPasta,
       description: 'Pasta tossed in a vibrant basil pesto sauce.',
+      nutrition: { calories: 400, protein: 12, carbs: 48, fat: 18 },
     },
     {
       id: 'italian-11',
@@ -565,6 +623,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: Gnocchi,
       description: 'Soft potato dumplings served with a marinara sauce.',
+      nutrition: { calories: 350, protein: 10, carbs: 60, fat: 8 },
     },
     {
       id: 'italian-12',
@@ -573,9 +632,10 @@ export const dummyMenuData = {
       rating: 4.7,
       image: OssoBuco,
       description: 'Braised veal shanks with vegetables and white wine.',
-    },
+      nutrition: { calories: 500, protein: 35, carbs: 25, fat: 28 },
+    }
   ],
-  Desserts: [
+Desserts: [
     {
       id: 'desserts-1',
       name: 'Tiramisu',
@@ -583,6 +643,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: TiramisuCake,
       description: 'Classic Italian dessert with coffee and mascarpone.',
+      nutrition: { calories: 450, protein: 6, carbs: 40, fat: 28 },
     },
     {
       id: 'desserts-2',
@@ -591,6 +652,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: Gelato,
       description: 'Italian-style ice cream available in various flavors.',
+      nutrition: { calories: 250, protein: 4, carbs: 30, fat: 12 },
     },
     {
       id: 'desserts-3',
@@ -599,6 +661,7 @@ export const dummyMenuData = {
       rating: 4.6,
       image: Cannoli,
       description: 'Crispy pastry tubes filled with sweet ricotta cream.',
+      nutrition: { calories: 350, protein: 5, carbs: 35, fat: 20 },
     },
     {
       id: 'desserts-4',
@@ -607,6 +670,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: PannaCotta,
       description: 'Smooth, creamy dessert topped with berry compote.',
+      nutrition: { calories: 300, protein: 4, carbs: 25, fat: 18 },
     },
     {
       id: 'desserts-5',
@@ -615,6 +679,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: Pavlova,
       description: 'Crispy meringue with a soft, light inside, topped with fresh fruits and whipped cream.',
+      nutrition: { calories: 320, protein: 3, carbs: 45, fat: 10 },
     },
     {
       id: 'desserts-6',
@@ -623,6 +688,7 @@ export const dummyMenuData = {
       rating: 4.8,
       image: ChocolateLavaCake,
       description: 'Warm chocolate cake with a molten center, served with vanilla ice cream.',
+      nutrition: { calories: 500, protein: 6, carbs: 55, fat: 28 },
     },
     {
       id: 'desserts-7',
@@ -631,6 +697,7 @@ export const dummyMenuData = {
       rating: 4.7,
       image: Baklava,
       description: 'Layered pastry with chopped nuts and honey, a Middle Eastern delight.',
+      nutrition: { calories: 400, protein: 5, carbs: 35, fat: 25 },
     },
     {
       id: 'desserts-8',
@@ -639,6 +706,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: StrawberryShortcake,
       description: 'Fluffy cake layered with fresh strawberries and whipped cream.',
+      nutrition: { calories: 380, protein: 5, carbs: 45, fat: 18 },
     },
     {
       id: 'desserts-9',
@@ -647,6 +715,7 @@ export const dummyMenuData = {
       rating: 4.5,
       image: CheeseCake,
       description: 'Rich cheesecake with a graham cracker crust.',
+      nutrition: { calories: 420, protein: 7, carbs: 35, fat: 28 },
     },
     {
       id: 'desserts-10',
@@ -655,6 +724,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: ChocolateMousse,
       description: 'Light and airy chocolate mousse with whipped cream.',
+      nutrition: { calories: 350, protein: 5, carbs: 30, fat: 22 },
     },
     {
       id: 'desserts-11',
@@ -663,6 +733,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: Profiteroles,
       description: 'Cream-filled pastry puffs drizzled with chocolate sauce.',
+      nutrition: { calories: 300, protein: 4, carbs: 28, fat: 18 },
     },
     {
       id: 'desserts-12',
@@ -671,9 +742,11 @@ export const dummyMenuData = {
       rating: 4.2,
       image: RicottaPie,
       description: 'Traditional ricotta pie with a light, flaky crust.',
+      nutrition: { calories: 380, protein: 6, carbs: 32, fat: 22 },
     },
   ],
-  Drinks: [
+
+Drinks: [
     {
       id: 'drinks-1',
       name: 'Iced Latte',
@@ -681,6 +754,7 @@ export const dummyMenuData = {
       rating: 4.0,
       image: IcedLatte,
       description: 'Cool and refreshing espresso-based iced latte.',
+      nutrition: { calories: 120, protein: 6, carbs: 12, fat: 5 },
     },
     {
       id: 'drinks-2',
@@ -689,6 +763,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: Mojito,
       description: 'Classic mojito with mint, lime, and rum.',
+      nutrition: { calories: 150, protein: 0, carbs: 15, fat: 0 },
     },
     {
       id: 'drinks-3',
@@ -697,6 +772,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: Smoothie,
       description: 'A blended mix of fruits for a refreshing drink.',
+      nutrition: { calories: 180, protein: 2, carbs: 40, fat: 0 },
     },
     {
       id: 'drinks-4',
@@ -705,6 +781,7 @@ export const dummyMenuData = {
       rating: 4.0,
       image: IcedTea,
       description: 'Chilled iced tea with a hint of lemon.',
+      nutrition: { calories: 10, protein: 0, carbs: 2, fat: 0 },
     },
     {
       id: 'drinks-5',
@@ -713,6 +790,7 @@ export const dummyMenuData = {
       rating: 4.1,
       image: MochaFrappuccino,
       description: 'Chilled coffee mixed with chocolate and blended with ice.',
+      nutrition: { calories: 250, protein: 5, carbs: 35, fat: 10 },
     },
     {
       id: 'drinks-6',
@@ -721,6 +799,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: GreenTeaSmoothie,
       description: 'A vibrant mix of green tea, fruits, and a splash of honey for sweetness.',
+      nutrition: { calories: 160, protein: 2, carbs: 35, fat: 1 },
     },
     {
       id: 'drinks-7',
@@ -729,6 +808,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: CaramelMacchiato,
       description: 'Layered espresso with steamed milk, topped with caramel drizzle.',
+      nutrition: { calories: 200, protein: 6, carbs: 25, fat: 7 },
     },
     {
       id: 'drinks-8',
@@ -737,6 +817,7 @@ export const dummyMenuData = {
       rating: 4.4,
       image: StrawberryMilkshake,
       description: 'Creamy milkshake loaded with fresh strawberries and a hint of vanilla.',
+      nutrition: { calories: 300, protein: 6, carbs: 40, fat: 10 },
     },
     {
       id: 'drinks-9',
@@ -745,6 +826,7 @@ export const dummyMenuData = {
       rating: 4.1,
       image: Lemonade,
       description: 'Freshly squeezed lemonade with a tangy kick.',
+      nutrition: { calories: 80, protein: 0, carbs: 20, fat: 0 },
     },
     {
       id: 'drinks-10',
@@ -753,6 +835,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: Espresso,
       description: 'Strong and rich espresso shot to start your day.',
+      nutrition: { calories: 5, protein: 0, carbs: 1, fat: 0 },
     },
     {
       id: 'drinks-11',
@@ -761,6 +844,7 @@ export const dummyMenuData = {
       rating: 4.3,
       image: Margarita,
       description: 'Refreshing margarita with tequila, lime, and a salt rim.',
+      nutrition: { calories: 180, protein: 0, carbs: 15, fat: 0 },
     },
     {
       id: 'drinks-12',
@@ -769,6 +853,7 @@ export const dummyMenuData = {
       rating: 4.2,
       image: Cappuccino,
       description: 'Frothy cappuccino with a perfect balance of espresso and milk.',
+      nutrition: { calories: 110, protein: 6, carbs: 10, fat: 5 },
     },
   ],
 };
