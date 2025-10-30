@@ -1,0 +1,87 @@
+/* ===== Container & Layout ===== */
+.meal-card {
+  font-family: 'Poppins', sans-serif; /* clean, readable modern font */
+  text-align: center;
+  background: rgba(64, 32, 12, 0.3);
+  border: 1px solid rgba(255, 193, 7, 0.25);
+  border-radius: 20px;
+  padding: 24px 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.15);
+}
+
+/* ===== Image Styling ===== */
+.meal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+/* ===== Headings ===== */
+.meal-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #ffda8a;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Description ===== */
+.meal-card p.description-text {
+  font-family: 'Merriweather', serif;
+  color: rgba(255, 250, 240, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+/* ===== Price ===== */
+.meal-card .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffcc66;
+  margin-bottom: 10px;
+}
+
+/* ===== Button ===== */
+.meal-card button {
+  background: linear-gradient(to right, #b87333, #a65e1a);
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meal-card button:hover {
+  background: linear-gradient(to right, #c08030, #8a4b10);
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 768px) {
+  .meal-card {
+    padding: 20px 14px;
+  }
+
+  .meal-card img {
+    height: 150px;
+  }
+
+  .meal-card h3 {
+    font-size: 1.5rem;
+  }
+}
