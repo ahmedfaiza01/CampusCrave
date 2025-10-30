@@ -30,13 +30,13 @@ const AboutHome = () => {
                     leading-tight'>
                             <span className='font-cursive text-4xl sm:text-5xl md:text-6xl 
                         bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent'>
-                                Epicurean Elegance
+                                CampusCrave Essence
 
                             </span>
                             <br />
                             <span className='inline-block mt-2 sm:mt-4 text-2xl sm:text-3xl
                         md:text-4xl opacity-90 font-light'>
-                                Where Flavors Dance &amp; Memories Bloom
+                                Where Every Meal Fuels Joy
 
                             </span>
 
@@ -44,8 +44,9 @@ const AboutHome = () => {
                         <p className='text-base sm:text-lg md:text-xl opacity-90 leading-relaxed
                     max-w-3xl font-serif italic border-l-4 bg-amber-500/60 pl-4 sm:pl-6 py-2 
                     bg-gradient-to-r from-white/5 to-transparent'>
-                            "In our Kitchen, passion meets precision. We craft not just meals,but curlinary journeys that linger on
-                            the palate and in the heart."
+                           "At CampusCrave, passion meets purpose. We craft not just meals, but nourishing 
+                           experiences that fuel your campus days, comfort your study nights, and bring 
+                           the flavors of home closer to your heart."
 
                         </p>
                     </div>
