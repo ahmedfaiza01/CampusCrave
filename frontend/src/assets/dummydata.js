@@ -122,6 +122,7 @@ export const teamMembers = [
 ];
 
 // ABOUT HOMEPAGE
+// ABOUT HOMEPAGE (Updated for CampusCrave)
 export const aboutfeature = [
     { 
         icon: FaBolt, 
@@ -148,6 +149,7 @@ export const aboutfeature = [
         color: "from-purple-400 to-indigo-600" 
     }
 ];
+
 
 // SPECIAL OFFER
 export const commonTransition = "transition-all duration-300";
@@ -183,9 +185,9 @@ export const iconClass = "absolute top-1/2 transform -translate-y-1/2 left-3 tex
 // CONTACT
 export const contactFormFields = [
     { label: 'Full Name', name: 'name', type: 'text', placeholder: 'Enter your full name', Icon: FiUser },
-    { label: 'Phone Number', name: 'phone', type: 'tel', placeholder: '+91 12345 67890', pattern: "[+]{0,1}[0-9]{10,13}", Icon: FiSmartphone },
+    { label: 'Phone Number', name: 'phone', type: 'tel', placeholder: '+880 12345 67890', pattern: "[+]{0,1}[0-9]{10,13}", Icon: FiSmartphone },
     { label: 'Email Address', name: 'email', type: 'email', placeholder: 'your.email@example.com', Icon: FiMail },
-    { label: 'Address', name: 'address', type: 'text', placeholder: 'Enter your delivery address', Icon: FiHome },
+    { label: 'Address', name: 'address', type: 'text', placeholder: 'Enter your address', Icon: FiHome },
     { label: 'Dish Name', name: 'dish', type: 'text', placeholder: 'Enter dish name (e.g., Butter Chicken)', Icon: FaUtensils },
 ];
 
