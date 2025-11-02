@@ -3,6 +3,7 @@ import { FaBolt, FaRegClock, FaCalendarCheck, FaFire } from 'react-icons/fa';
 import { FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { FiUser, FiSmartphone, FiMail, FiHome } from 'react-icons/fi';
 import { FaUtensils } from 'react-icons/fa';
+import { FaServicestack } from "react-icons/fa";
 import { GiChefToque, GiFoodTruck } from 'react-icons/gi';
 import { GiMeal } from "react-icons/gi";
 import IA1 from './IA1.jpg';
@@ -37,13 +38,14 @@ export const features = [
     icon: GiMeal,
     img: IA1,
   },
-  {
-    id: 2,
-    title: "Expert Chefs",
-    text: "Our professional chefs craft every meal with care, balancing taste, nutrition, and presentation.",
-    icon: GiChefToque,
-    img: IA2,
-  },
+ {
+  id: 2,
+  title: "Quick & Reliable Service",
+  text: "Students can pre-order their meals and enjoy instant service — no more waiting in long queues or wasting time between classes.",
+  icon: FaServicestack,
+  img: IA2,
+},
+
   {
     id: 3,
     title: "Fresh & Organic Ingredients",
