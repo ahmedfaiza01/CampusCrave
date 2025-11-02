@@ -4,12 +4,13 @@ import { FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 import { FiUser, FiSmartphone, FiMail, FiHome } from 'react-icons/fi';
 import { FaUtensils } from 'react-icons/fa';
 import { GiChefToque, GiFoodTruck } from 'react-icons/gi';
-import IA1 from './IA1.png';
-import IA2 from './IA2.png';
-import IA3 from './IA3.png';
-import IA4 from './IA4.png';
-import IA5 from './IA5.png';
-import IA6 from './IA6.png';
+import { GiMeal } from "react-icons/gi";
+import IA1 from './IA1.jpg';
+import IA2 from './IA2.webp';
+import IA3 from './IA3.jpeg';
+import IA4 from './IA4.jpg';
+import IA5 from './IA5.jpg';
+import IA61 from './IA61.png';
 
 import Kebab from "./Kebab.png";
 import ChickenTikka from "./ChickenTikka.png";
@@ -29,33 +30,34 @@ import Video from "./Video.mp4";
 
 // ABOUT PAGE
 export const features = [
-    {
-        id: 1,
-        title: "Instant Delivery",
-        text: "30-minute delivery guarantee in metro areas",
-        icon: FaShippingFast, // store the component reference
-        img: IA1,
-    },
-    {
-        id: 2,
-        title: "Master Chefs",
-        text: "Michelin-star trained culinary experts",
-        icon: GiChefToque,
-        img: IA2,
-    },
-    {
-        id: 3,
-        title: "Premium Quality",
-        text: "Locally sourced organic ingredients",
-        icon: FaLeaf,
-        img: IA3,
-    },
+  {
+    id: 1,
+    title: "Flexible Meal Plans",
+    text: "Choose from weekly or monthly subscriptions designed for your lifestyle — from light to premium plans.",
+    icon: GiMeal,
+    img: IA1,
+  },
+  {
+    id: 2,
+    title: "Expert Chefs",
+    text: "Our professional chefs craft every meal with care, balancing taste, nutrition, and presentation.",
+    icon: GiChefToque,
+    img: IA2,
+  },
+  {
+    id: 3,
+    title: "Fresh & Organic Ingredients",
+    text: "We use only farm-fresh, locally sourced ingredients to ensure top quality in every bite.",
+    icon: FaLeaf,
+    img: IA3,
+  },
 ];
+
 
 export const stats = [
     {
-        number: '10M+',
-        label: 'Deliveries',
+        number: '2M+',
+        label: 'Orders',
         icon: GiFoodTruck,
         gradient: 'from-amber-500 via-orange-400 to-yellow-600',
     },
@@ -66,8 +68,8 @@ export const stats = [
         gradient: 'from-rose-500 via-amber-500 to-yellow-500',
     },
     {
-        number: '500+',
-        label: 'Cities',
+        number: '5000+',
+        label: 'Users',
         icon: FaLeaf,
         gradient: 'from-emerald-500 via-amber-500 to-yellow-600',
     },
@@ -80,46 +82,47 @@ export const stats = [
 ];
 
 export const teamMembers = [
-    {
-        name: "Marco Yansen",
-        role: "Executive Chef",
-        img: IA4,
-        bio: "3 Michelin stars | Italian cuisine specialist",
-        delay: 0.1,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
+  {
+    name: "Marisha Rahman",
+    role: "Head Chef",
+    img: IA4,
+    bio: "15+ years of culinary experience | Specializes in fusion cuisine and modern Bangladeshi dishes",
+    delay: 0.1,
+    social: {
+      twitter: "https://x.com/",
+      instagram: "https://www.instagram.com/",
+      facebook: "https://www.facebook.com/",
+      linkedin: "https://www.linkedin.com/",
     },
+  },
     {
-        name: "Amit Singh",
-        role: "Pastry Chef",
-        img: IA5,
-        bio: "World Baking Champion | French desserts expert",
-        delay: 0.3,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
+    name: "Aisha Chowdhury",
+    role: "Founder & CEO",
+    img: IA5,
+    bio: "Visionary behind CampusCrave — passionate about bringing affordable, healthy meals to every student.",
+    delay: 0.1,
+    social: {
+      twitter: "https://x.com/?lang=en",
+      instagram: "https://www.instagram.com/",
+      facebook: "https://www.facebook.com/",
+      linkedin: "https://www.linkedin.com/",
     },
-    {
-        name: "Akash Trivedi",
-        role: "Sushi Chef",
-        img: IA6,
-        bio: "5th generation sushi chef | Traditional techniques",
-        delay: 0.5,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
+  },
+  {
+    name: "Tanveer Ahmed",
+    role: "Nutrition & Meal Planner",
+    img: IA61,
+    bio: "Crafts balanced subscription meal plans for fitness and wellness goals",
+    delay: 0.5,
+    social: {
+      twitter: "https://x.com/",
+      instagram: "https://www.instagram.com/",
+      facebook: "https://www.facebook.com/",
+      linkedin: "https://www.linkedin.com/",
     },
+  },
 ];
+
 
 // ABOUT HOMEPAGE
 // ABOUT HOMEPAGE (Updated for CampusCrave)
