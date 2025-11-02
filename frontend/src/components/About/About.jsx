@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+rimport React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaXTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa6';
 import { features, stats, teamMembers } from '../../assets/dummydata';
