@@ -7,7 +7,7 @@ import { FaServicestack } from "react-icons/fa";
 import { GiChefToque, GiFoodTruck } from 'react-icons/gi';
 import { GiMeal } from "react-icons/gi";
 import IA1 from './IA1.jpg';
-import IA2 from './IA2.webp';
+import IA22 from './IA22.webp';
 import IA3 from './IA3.jpeg';
 import IA4 from './IA4.jpg';
 import IA5 from './IA5.jpg';
@@ -43,7 +43,7 @@ export const features = [
   title: "Quick & Reliable Service",
   text: "Students can pre-order their meals and enjoy instant service — no more waiting in long queues or wasting time between classes.",
   icon: FaServicestack,
-  img: IA2,
+  img: IA22,
 },
 
   {
