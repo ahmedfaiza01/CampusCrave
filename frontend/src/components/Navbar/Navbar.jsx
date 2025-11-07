@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { GiForkKnifeSpoon, GiChefToque } from 'react-icons/gi'
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
-import { FiHome, FiBook, FiStar, FiPhone, FiShoppingCart, FiLogOut, FiKey } from 'react-icons/fi'
+import { FiHome, FiBook, FiBell, FiStar, FiPhone, FiShoppingCart, FiLogOut, FiKey } from 'react-icons/fi'
 
 import { useCart } from '../../CartContext/CartContext'
-import Login from '../Login/Login'  // make sure you have this component
+import Login from '../Login/Login'  
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -95,6 +95,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', to: '/', icon: <FiHome /> },
     { name: 'Menu', to: '/menu', icon: <FiBook /> },
+    { name: 'Meal Plans', to: '/mealplans', icon: <FiBell  /> },
     { name: 'About', to: '/about', icon: <FiStar /> },
     { name: 'Contact', to: '/contact', icon: <FiPhone /> },
   ]
