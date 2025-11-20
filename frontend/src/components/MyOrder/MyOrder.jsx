@@ -21,7 +21,7 @@ const MyOrder = () => {
                     }
                 });
 
-                // FORMAT
+                // FORMAT ORDERS
                 const formattedOrders = response.data.map(order => ({
                     ...order,
                     items: order.items?.map(entry => ({
@@ -169,10 +169,19 @@ const MyOrder = () => {
                                     const paymentMethod = getPaymentMethodDetails(order.paymentMethod);
                                     const status = statusStyles[order.status] || statusStyles.pending;
 
-                                    // FIX: If delivered → payment completed
+                                    // UPDATED PAYMENT STATUS LOGIC
                                     let paymentStatus = statusStyles[order.paymentStatus] || statusStyles.pending;
-                                    if (order.status === "delivered") {
-                                        paymentStatus = statusStyles.succeeded;
+
+                                    if (order.paymentMethod === "cod") {
+                                        if (order.status === "processing") {
+                                            paymentStatus = statusStyles.pending;
+                                        } else if (order.status === "delivered") {
+                                            paymentStatus = statusStyles.delivered;
+                                        }
+                                    } else {
+                                        if (order.status === "delivered") {
+                                            paymentStatus = statusStyles.succeeded;
+                                        }
                                     }
 
                                     return (
