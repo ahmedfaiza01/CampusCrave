@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FiUser } from 'react-icons/fi';
-// Make sure you have iconMap defined/imported somewhere
 import { layoutClasses, tableClasses, statusStyles, paymentMethodDetails } from '../assets/dummyadmin';
 import { FaCheckCircle, FaClock, FaTimesCircle } from 'react-icons/fa';
 
 const iconMap = {
   succeeded: <FaCheckCircle className="text-green-400" />,
+  delivered: <FaCheckCircle className="text-green-400" />,
   processing: <FaClock className="text-yellow-400" />,
   failed: <FaTimesCircle className="text-red-400" />,
 };
@@ -96,8 +96,16 @@ const Order = () => {
                 {orders.map(order => {
                   const totalItems = order.items.reduce((s, i) => s + i.quantity, 0);
                   const totalPrice = order.total ?? order.items.reduce((s, i) => s + Number(i.item.price || 0) * i.quantity, 0);
-                  const payMethod = paymentMethodDetails[order.paymentMethod?.toLowerCase()] || paymentMethodDetails.default;
-                  const payStatusStyle = statusStyles[order.paymentStatus] || statusStyles.processing;
+
+                  
+                  const method = order.paymentMethod?.toLowerCase() === "cod" ? "offline" : order.paymentMethod;
+                  const payMethod = paymentMethodDetails[method] || paymentMethodDetails.default;
+
+                  let paymentStatus = "processing";
+                  if (order.status === "delivered") paymentStatus = "delivered";
+                  if (order.status === "processing") paymentStatus = "processing";
+
+                  const payStatusStyle = statusStyles[paymentStatus];
                   const stat = statusStyles[order.status] || statusStyles.processing;
 
                   return (
@@ -105,21 +113,26 @@ const Order = () => {
                       <td className={tableClasses.cellBase + ' font-mono text-sm text-amber-100'}>
                         #{order._id.slice(-8)}
                       </td>
+
                       <td className={tableClasses.cellBase}>
                         <div className="flex items-center gap-2">
                           <FiUser className="text-amber-400" />
                           <div>
-                            <p className="text-amber-100">{order.user?.name || order.firstName + ' ' + order.lastName}</p>
+                            <p className="text-amber-100">
+                              {order.user?.name || order.firstName + ' ' + order.lastName}
+                            </p>
                             <p className="text-sm text-amber-400/60">{order.user?.phone || order.phone}</p>
                             <p className="text-sm text-amber-400/60">{order.user?.email || order.email}</p>
                           </div>
                         </div>
                       </td>
+
                       <td className={tableClasses.cellBase}>
                         <div className="text-amber-100/80 text-sm max-w-[200px]">
                           {order.address}, {order.city} - {order.zipCode}
                         </div>
                       </td>
+
                       <td className={tableClasses.cellBase}>
                         <div className="space-y-1 max-h-52 overflow-auto">
                           {order.items.map((itm, idx) => (
@@ -131,7 +144,7 @@ const Order = () => {
                               />
                               <div className="flex-1">
                                 <span className="text-amber-100/80 text-sm block truncate">{itm.item.name}</span>
-                                <div className='flex items-center gap-2 text-xs text-amber-400/60'>
+                                <div className="flex items-center gap-2 text-xs text-amber-400/60">
                                   <span>Tk {Number(itm.item.price || 0).toFixed(2)}</span>
                                   <span>x{itm.quantity}</span>
                                 </div>
@@ -140,38 +153,53 @@ const Order = () => {
                           ))}
                         </div>
                       </td>
+
                       <td className={tableClasses.cellBase + ' text-center'}>
                         <span className="text-amber-100">{totalItems}</span>
                       </td>
+
                       <td className={tableClasses.cellBase + ' text-amber-300 text-lg'}>
                         Tk {totalPrice.toFixed(2)}
                       </td>
+
+                      {/* PAYMENT SECTION */}
                       <td className={tableClasses.cellBase}>
-                        <div className='flex flex-col gap-2'>
+                        <div className="flex flex-col gap-2">
+
+                          
                           <div className={`${payMethod.class} px-3 py-1.5 rounded-lg border text-sm`}>
-                            {payMethod.label}
+                            {method === "offline" ? "OFFLINE" : payMethod.label}
                           </div>
-                          <div className={`${payStatusStyle.color} flex items-center gap-2 text-sm`} >
-                            {iconMap[payStatusStyle.icon]}
+
+                          
+                          <div className={`${payStatusStyle.color} flex items-center gap-2 text-sm`}>
+                            {iconMap[paymentStatus]}
                             <span>{payStatusStyle.label}</span>
                           </div>
                         </div>
                       </td>
+
+                      {/* ORDER STATUS */}
                       <td className={tableClasses.cellBase}>
-                        <div className='flex items-center gap-2'>
-                          <span className={`${stat.color} text-xl`}>{iconMap[stat.icon]}</span>
+                        <div className="flex items-center gap-2">
+                          <span className={`${stat.color} text-xl`}>
+                            {iconMap[order.status]}
+                          </span>
+
                           <select
                             value={order.status}
                             onChange={e => handleStatusChange(order._id, e.target.value)}
-                            className={`px-4 py-2 rounded-lg ${stat.bg} ${stat.color} border border-amber-500/20 text-sm cursor-pointer`}>
-                            {Object.entries(statusStyles).filter(([k]) => k !== 'succeeded').map(([key, sty]) => (
-                              <option value={key} key={key} className={`${sty.bg} ${sty.color}`}>
-                                {sty.label}
+                            className={`px-4 py-2 rounded-lg ${stat.bg} ${stat.color} border border-amber-500/20 text-sm cursor-pointer`}
+                          >
+                            {["processing", "delivered",].map(key => (
+                              <option value={key} key={key}>
+                                {key.charAt(0).toUpperCase() + key.slice(1)}
                               </option>
                             ))}
                           </select>
                         </div>
                       </td>
+
                     </tr>
                   );
                 })}
@@ -180,7 +208,7 @@ const Order = () => {
           </div>
 
           {orders.length === 0 && (
-            <div className='text-center py-12 text-amber-100/60 text-xl'>
+            <div className="text-center py-12 text-amber-100/60 text-xl">
               No orders found
             </div>
           )}
