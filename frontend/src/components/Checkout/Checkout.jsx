@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import {  useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { FaArrowLeft, FaLock } from 'react-icons/fa'
 import { useCart } from '../../CartContext/CartContext'
 import axios from 'axios';
@@ -150,7 +150,7 @@ const Checkout = () => {
                                         <span className='ml-2 text-amber-500/80 text-sm'>x{quantity}</span>
                                     </div>
                                     <span className='text-amber-300'>
-                                        Tk {(item.price * quantity).toFixed(2)}
+                                        Tk{(item.price * quantity).toFixed(2)}
                                     </span>
                                 </div>
                             ))}
@@ -192,39 +192,39 @@ const Checkout = () => {
 }
 
 const Input = ({ label, name, type = 'text', value, onChange }) => (
-  <div>
-    <label className='block mb-1'>{label}</label>
-    <input 
-      type={type} 
-      name={name} 
-      value={value} 
-      onChange={onChange} 
-      required 
-      className='w-full bg-[#3a2b2b]/50 rounded-xl px-4 py-2' 
-    />
-  </div>
+    <div>
+        <label className='block mb-1'>{label}</label>
+        <input
+            type={type}
+            name={name}
+            value={value}
+            onChange={onChange}
+            required
+            className='w-full bg-[#3a2b2b]/50 rounded-xl px-4 py-2'
+        />
+    </div>
 );
 const PaymentSummary = ({ totalAmount }) => {
-  const subtotal = Number(totalAmount.toFixed(2));
-  const tax = Number((subtotal * 0.05).toFixed(2));
-  const total = Number((subtotal + tax).toFixed(2));
-  
-  return (
-  <div className='space-y-2'>
-    <div className='flex justify-between'>
-      <span>Subtotal:</span>
-      <span>₹{subtotal.toFixed(2)}</span>
-    </div>
-    <div className='flex justify-between'>
-      <span>Tax (5%):</span>
-      <span>₹{tax.toFixed(2)}</span>
-    </div>
-    <div className='flex justify-between font-bold border-t pt-2'>
-      <span>Total:</span>
-      <span>₹{total.toFixed(2)}</span>
-    </div>
-  </div>
-);
+    const subtotal = Number(totalAmount.toFixed(2));
+    const tax = Number((subtotal * 0.05).toFixed(2));
+    const total = Number((subtotal + tax).toFixed(2));
+
+    return (
+        <div className='space-y-2'>
+            <div className='flex justify-between'>
+                <span>Subtotal:</span>
+                <span>Tk{subtotal.toFixed(2)}</span>
+            </div>
+            <div className='flex justify-between'>
+                <span>Tax (5%):</span>
+                <span>Tk{tax.toFixed(2)}</span>
+            </div>
+            <div className='flex justify-between font-bold border-t pt-2'>
+                <span>Total:</span>
+                <span>Tk {total.toFixed(2)}</span>
+            </div>
+        </div>
+    );
 };
 
 
